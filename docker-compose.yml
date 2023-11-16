@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   db:
@@ -16,8 +16,6 @@ services:
   pma:
     image: phpmyadmin/phpmyadmin
     container_name: pma
-    links:
-      - db
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
@@ -25,5 +23,13 @@ services:
     restart: always
     ports:
       - 8081:80
+  myXampp:
+    image: tomsik68/xampp
+    container_name: myXampp
+    ports:
+      - 41061:22
+      - 41062:80
+    volumes:
+      - ./www:/www
 volumes:
   db:

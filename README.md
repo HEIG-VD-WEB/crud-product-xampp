@@ -1,4 +1,4 @@
-# A simple CRUD application for product
+# A simple CRUD application for products using XAMPP
 
 This is an exemple and the result of a tutorial.
 
@@ -18,8 +18,6 @@ Open the project in Visual Studio Code, and open it in a devcontainer. In a term
 
 ```bash
 docker-compose up --detach
-
-php -S localhost:8080
 ```
 
-The application should start and be accessible at <http://localhost:8080>.
+The application should start and be accessible at <http://localhost:41062/www>
