@@ -1,0 +1,16 @@
+{
+    "name": "vscode/crud-product",
+    "description": "A CRUD application",
+    "type": "project",
+    "license": "AGPL3.0",
+    "authors": [
+        {
+            "name": "Vincent Guidoux",
+            "email": "vincent.guidoux@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.38",
+        "squizlabs/php_codesniffer": "*"
+    }
+}

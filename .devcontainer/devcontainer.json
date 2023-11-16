@@ -16,7 +16,9 @@
 				"GitHub.copilot",
 				"ms-azuretools.vscode-docker",
 				"DEVSENSE.phptools-vscode",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"junstyle.php-cs-fixer",
+				"EditorConfig.EditorConfig"
 			]
 		}
 	},

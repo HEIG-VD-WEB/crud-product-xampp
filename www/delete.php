@@ -1,11 +1,10 @@
 <?php
 
-$pdo = new PDO('mysql:host=db;port=3306;dbname=products_crud', 'user', 'password');
+$pdo = new PDO('mysql:host=db;port=3306;dbname=in-the-name-of', 'user', 'password');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $id = $_GET['id'] ?? null;
-if (!$id) {
-    header('Location: index.php');
+if (!$id) {   header('Location: index.php');
     exit;
 }
 

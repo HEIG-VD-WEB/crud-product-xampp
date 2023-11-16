@@ -20,4 +20,4 @@ Open the project in Visual Studio Code, and open it in a devcontainer. In a term
 docker-compose up --detach
 ```
 
-The application should start and be accessible at <http://localhost:41062/www>
+The application should start and be accessible at <http://localhost:41062/www> 

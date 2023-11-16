@@ -1,11 +1,10 @@
 <?php
 
-$pdo = new PDO('mysql:host=db;port=3306;dbname=products_crud', 'user', 'password');
+$pdo = new PDO('mysql:host=db;port=3306;dbname=in-the-name-of', 'user', 'password');
 
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$statement = $pdo->prepare('SELECT * FROM products ORDER BY create_date DESC');
-$statement->execute();
+$statement = $pdo->prepare('SELECT * FROM products ORDER BY create_date DESC');$statement->execute();
 $products = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 

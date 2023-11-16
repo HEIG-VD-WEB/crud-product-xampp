@@ -6,7 +6,7 @@ if (!$id) {
     exit;
 }
 
-$pdo = new PDO('mysql:host=db;port=3306;dbname=products_crud', 'user', 'password');
+$pdo = new PDO('mysql:host=db;port=3306;dbname=in-the-name-of', 'user', 'password');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $statement = $pdo->prepare('SELECT * FROM products WHERE id = :id');
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (empty($errors)) {
         $statement = $pdo->prepare("UPDATE products SET title = :title,
-                                        description = :description, 
+                                        description = :description,
                                         price = :price WHERE id = :id");
         $statement->bindValue(':title', $title);
         $statement->bindValue(':description', $description);

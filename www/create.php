@@ -1,6 +1,6 @@
 <?php
 
-$pdo = new PDO('mysql:host=db;port=3306;dbname=products_crud', 'user', 'password');
+$pdo = new PDO('mysql:host=db;port=3306;dbname=in-the-name-of', 'user', 'password');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $errors = [];
